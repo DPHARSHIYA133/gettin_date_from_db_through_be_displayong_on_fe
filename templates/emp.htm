@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display emp</title>
+</head>
+<body>
+    <center>
+        <h1>emp table</h1>
+        <table border="2px">
+            <tr>
+                <th>eno</th>
+                <th>ename</th>
+                <th>sal</th>
+                <th>job</th>
+                <th>hiredate</th>
+                <th>mgr</th>
+                <th>comm</th>
+                <th>deptno</th>
+            </tr>
+        {% for eo in LEO %}
+        <tr>
+            <th>{{ eo.pk }}</th>
+            <th>{{ eo.eno }}</th>
+            <th>{{ eo.ename }}</th>
+            <th>{{ eo.sal }}</th>
+            <th>{{ eo.job }}</th>
+            <th>{{ eo.hiredate }}</th>
+            <th>{{ eo.comm }}</th>
+            <th>{{ eo.deptno }}</th>
+        </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
